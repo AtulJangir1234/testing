@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
+
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+  
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+
+
+/* If the screen size is 601px or more, set the font-size of <div> to 80px */
+@media only screen and (min-width: 601px) {
+    .ch1-inner {
+      font-size: 80px;
+    }
+  }
+  
+  /* If the screen size is 600px or less, set the font-size of <div> to 30px */
+  @media only screen and (max-width: 600px) {
+    .ch1-inner {
+      font-size: 30px;
+    }
+  }
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.ch1-main{
+    width: 100vw;
+    min-height: 50vw;
+    display: grid;
+    place-items: center;
+    background-color: hsl(206, 92%, 94%);
+    background: url(bg.gif);
+    max-width:100%;
+    height:auto;
+}
+
+.ch1-inner{
+    width: 40vw;
+    background-color: #fff;
+    padding: 3rem 8rem;
+    border-radius: 1rem;
+    box-shadow: 0 2rem 2rem -0.9rem rgba(0, 0, 0, 0.4);
+}
+
+.ch1-inner h2{
+    font-size: 3rem;
+    font-weight: 400;
+    margin-top: 1rem 0 4rem 0;
+}
+
+.ch1-inner li{
+    font-size: 2rem;
+    font-weight: 100;
+    margin-top: 1.5rem;
+    list-style: none;
+}
+
+input{
+    cursor: pointer;
+}
+
+#submit, .btn{
+    padding: 1rem 3rem;
+    outline: none;
+    font-size: 2rem;
+    font-size: 400;
+    display: block;
+    margin: auto;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #74b9ff;
+    margin-top: 4rem;
+    cursor: pointer;
+}
+
+#submit:hover{
+    background-color: #0984e3;
+
+}
+
+#showScore{
+    background-color: #dfe6e9;
+    margin-top: 3rem;
+    padding: 3rem 4rem;
+    box-shadow: 0 1.5rem 2rem -0.8rem rgba(0, 0, 0, 0.4);
+}
+
+#showScore h3{
+    font-size: 3rem;
+    text-align: center;
+}
+
+#showScore .btn:hover{
+    background-color: #00b894;
+    color: #fff;
+}
+
+.scoreArea{
+    display: none;
+}
